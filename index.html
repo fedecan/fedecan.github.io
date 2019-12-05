@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Required styles for MDC Web -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <title>AWP - Clase 1</title>
+</head>
+
+<body>
+
+
+    <!-- Render textfield component -->
+    <div class="mdc-text-field">
+        <input type="text" id="my-text-field" class="mdc-text-field__input">
+        <label class="mdc-floating-label" for="my-text-field">Label</label>
+        <div class="mdc-line-ripple"></div>
+    </div>
+
+    <!-- Required MDC Web JavaScript library -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Instantiate single textfield component rendered in the document -->
+    <script>
+        mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+    </script>
+</body>
+
+</html>
